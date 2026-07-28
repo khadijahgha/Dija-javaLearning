@@ -1,34 +1,33 @@
 package oop;
 
-public class Main{
+public class Main {
     public static void main(String[] args){
-        Student student1 = new Student();
-        Student student2 = new Student();
+        Student student1 = new Student(
+                "Swabirat Osman",
+                37,
+                "Computer Science",
+                4.0,
+                "Ghana"
+        );
 
-        student1.name = "Swabirat";
-        student1.age = 22;
-        student1.course = "Computer science";
-        student1.gpa = 4.0;
+        Student student2 = new Student(
+                "Alima Idris",
+                20,
+                "Mathematics",
+                3.0,
+                "Liberia"
+        );
 
-        student2.name = "Saeed";
-        student2.age = 22;
-        student2.course = "Arabic";
-        student2.gpa = 3.5;
+        Student student3 = new Student(
+                "Sukainat Saeed",
+                15,
+                "Physics",
+                3.9,
+                "Canada"
+        );
 
-        System.out.println("Student 1");
-        System.out.println("----------");
-        System.out.println("Name: " + student1.name);
-        System.out.println("Age: " + student1.age);
-        System.out.println("Course: " + student1.course);
-        System.out.println("GPA: " + student1.gpa);
-
-        System.out.println("----------");
-
-        System.out.println("Student 2");
-        System.out.println("----------");
-        System.out.println("Name: " + student2.name);
-        System.out.println("Age: " + student2.age);
-        System.out.println("Course: " + student2.course);
-        System.out.println("GPA: " + student2.gpa);
+         student1.displayStudent();
+         student2.displayStudent();
+         student3.displayStudent();
     }
 }

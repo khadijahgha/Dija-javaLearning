@@ -1,5 +1,7 @@
 package oop;
 
+//Responsible for Name, Age,Course,GPA,Country,checking if student is excellent and Displaying one student's details
+
 public class Student {
     private String name;
     private int age;
@@ -45,6 +47,9 @@ public class Student {
         }else{
             System.out.println("Invalid gpa! gpa must be between 2.5 and 4.5");
         }
+    }
+    public void setName(String name){
+        this.name = name;
     }
 }
 

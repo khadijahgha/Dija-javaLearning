@@ -26,34 +26,18 @@ public class Main {
                 "Canada"
         );
 
-         /*student1.displayStudent();
-         student2.displayStudent();
-         student3.displayStudent();*/
+        StudentManager manager = new StudentManager();
+        manager.addStudent(student1);
+        manager.addStudent(student2);
+        manager.addStudent(student3);
 
-        if(student2.isExcellentStudent()){
-            System.out.println(student2.getName() + " is an excellent student.");
-        }else{
-            System.out.println(student2.getName() + " is not excellent student.");
-        }
+        manager.displayAllStudents();
 
-        System.out.println("Student number 1 details");
-        System.out.println("-------------------------");
-        System.out.println(student1.getName());
-        student1.setGpa(3.5);
-        System.out.println(student1.getGpa());
-        System.out.println("**************************");
+        System.out.println();
+        manager.searchStudent("Swabirat Osman");
+        System.out.println();
+        manager.searchStudent("David");
 
-        System.out.println("Student number 2 details");
-        System.out.println("-------------------------");
-        System.out.println(student2.getName());
-        student2.setGpa(4.5);
-        System.out.println(student2.getGpa());
-        System.out.println("**************************");
 
-        System.out.println("Student number 3 details");
-        System.out.println("-------------------------");
-        System.out.println(student3.getName());
-        student3.setGpa(2.0);
-        System.out.println(student3.getGpa());
     }
 }

@@ -54,9 +54,22 @@ public class Main {
                     System.out.println("Enter student course = ");
                     String course = input.nextLine();
 
-                    System.out.println("Enter student gpa = ");
-                    double gpa = input.nextDouble();
-                    input.nextLine();
+                    double gpa;
+                    while (true) {
+                        System.out.println("Enter student gpa = ");
+                        if(input.hasNextDouble()) {
+                            gpa = input.nextDouble();
+                            input.nextLine();
+                        if(gpa >= 2.5 && gpa <= 4.5) {
+                            break;
+                        }else {
+                            System.out.println("Invalid Gpa! Gpa must be between 2.5 and 4.5");
+                        }
+                        }else{
+                            System.out.println("Invalid Gpa! please try again...");
+                            input.nextLine();
+                        }
+                    }
 
                     System.out.println("Enter student country = ");
                     String country = input.nextLine();

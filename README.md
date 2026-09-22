@@ -14,3 +14,4 @@ Welcome to my Java learning repository! This project serves as a practical testi
 
 ## 📈 Goals
 I am actively using this space to continuously level up my skills. Future updates will include database integrations (SQL) and building responsive user interfaces.
+## The future update is undergoing but set to Private
